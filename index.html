@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<!-- 	------- TO-DO: ADD META TAG AND NAME HERE -------- -->
 	<meta name="author" content="Tiarra Kaye">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Form Activity Solution File</title>
@@ -33,22 +33,22 @@
 				need help with accessing your website or if they just prefer that your forms be easy to use and submit.
 				Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
 
-			<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
-			<form>
+			<!-- 	------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+			<form action="/submit-data" method="post">
 				<label for="full-name">Full Name<span class="required">*</span></label>
-				<input type="text" id="full-name" name="full_name" required />
+				<input type="text" id="full-name" name="full_name" required>
 				<label for="email">Email<span class="required">*</span></label>
-				<input type="email" id="email" name="email" required />
+				<input type="email" id="email" name="email" required>
 				<label for="phone">Phone<span class="required">*</span></label>
-				<input type="tel" id="phone" name="phone" required />
-				<label for="contact-method">Preferred Contact Method<span class="required">*</span></label>
+				<input type="tel" id="phone" name="phone" required>
 				<fieldset>
+					<legend>Preferred Contact Method<span class="required">*</span></legend>
 					<input id="contact-phone" type="radio" name="contact-method" value="phone">
 					<label for="contact-phone">Phone</label>
 					<input id="contact-email" type="radio" name="contact-method" value="email">
 					<label for="contact-email">Email</label>
 				</fieldset>
-				<label for="state">State<span class="required">*</span></label>
+				<label for="input-select">State<span class="required">*</span></label>
 					<select id="input-select" name="select">
 					<option value="Alabama">Alabama</option>
 					<option value="Alaska">Alaska</option>
